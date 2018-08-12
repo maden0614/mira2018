@@ -35,8 +35,8 @@ app.listen(process.env.PORT || 3000, () => {
 
 let submissions = [
   { address: "1 Memory Ln", zipCode: 92506, date: "06/25/19"},
-  { address: "1 Memory Ln", zipCode: 92506, date: "06/25/19"},
-  { address: "1 Memory Ln", zipCode: 95076, date: "06/25/19"}
+  { address: "12 Amsterdam Way", zipCode: 92792, date: "06/25/19"},
+  { address: "150 Adams St", zipCode: 95076, date: "06/25/19"}
 ]
 
 app.get('/api/submissions', (req, res) => res.json(submissions) );
