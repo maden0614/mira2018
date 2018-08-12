@@ -2,6 +2,9 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 
+var db = require('./models'),
+  Submission = db.Submission;
+
 // Configure app
 app.set('views', __dirname + 'views');      // Views directory
 app.use(express.static('public'));          // Static directory
@@ -29,9 +32,7 @@ app.use((req, res, next) => {
     next();
   });
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log('Express server is up and running on http://localhost:3000/');
-});
+
 
 let submissions = [
   { address: "1 Memory Ln", zipCode: 92506, date: "06/25/19"},
@@ -52,4 +53,10 @@ app.post('/api/submissions', (request, response) => {
   console.log(submissions);
 });
 
+app.
+
 app.get('/api/submissions/zipCode', (req, res) => res.json(submissions));
+
+app.listen(process.env.PORT || 3000, () => {
+  console.log('Express server is up and running on http://localhost:3000/');
+});

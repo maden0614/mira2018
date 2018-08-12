@@ -1,6 +1,6 @@
-const db = require ('./models');
+var db = require ('./models');
 
-var submissions = [
+var Submission = [
     {
       address: "1 Memory Ln",
       zipCode: 92506,
@@ -18,7 +18,12 @@ var submissions = [
     }
 ];
 
-db.Submissions.create(submissions, (err, newSubmission)) => {
+// db.Submission.remove({}, function (err, ){
+//   console.log('removed all submission');
+//
+// });
+
+db.Submission.create(submissions, (err, newSubmission)) => {
   if(err) {
     return console.log(err)
   }
