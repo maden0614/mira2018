@@ -18,14 +18,36 @@ var Submission = [
     }
 ];
 
+var Texts = [
+  {
+    phone: 7149560891,
+    zipCode: 92506
+  },
+  {
+    phone: 9512365891,
+    zipCode: 92792
+  },
+  {
+    phone: 3232366891,
+    zipCode: 95076
+  }
+];
+
 // db.Submission.remove({}, function (err, ){
 //   console.log('removed all submission');
 //
 // });
 
-db.Submission.create(submissions, (err, newSubmission)) => {
-  if(err) {
-    return console.log(err)
-  }
-  console.log("saved new submission:", newSubmission);
-});
+// db.submission.create(submissions, (err, newSubmission)) => {
+//   if(err) {
+//     return console.log(err)
+//   }
+//   console.log("saved new submission:", newSubmission);
+// });
+// 
+// db.Texts.create(texts, (err, newTexts)) => {
+//   if(err) {
+//     return console.log(err)
+//   }
+//   console.log("saved new text:", newText);
+// });

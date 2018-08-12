@@ -1,0 +1,26 @@
+{
+  "name": "mira2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "seed.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maden0614/mira2018.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maden0614/mira2018/issues"
+  },
+  "homepage": "https://github.com/maden0614/mira2018#readme"
+}
